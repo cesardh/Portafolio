@@ -1,0 +1,213 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #1c4349;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contenedor{
+  background-color: #1c4349;
+  background-image: url("../img/fondo2.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  width: 100%;
+  max-width: 1150px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px;
+
+}
+
+
+#titulo{
+  font-size: 1.5em;
+  margin: 70px auto;
+  text-align: center;
+  font-family: "ISOCTEUR", serif;
+  color: #6e8a8a;
+}
+
+#lista{
+  width: 920px;
+  margin: 0 auto;
+}
+
+#lista .elem{
+  background-color: rgba(41,51,51,0.3);
+  border-radius: 50%;
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 1000ms ease-in-out;
+}
+
+.elem:nth-child(1){
+  box-shadow: 2px 2px #a58065;
+}
+.elem:nth-child(2){
+  box-shadow: 2px 2px #65a576;
+}
+.elem:nth-child(3){
+  box-shadow: 2px 2px #a56583;
+}
+.elem:nth-child(4){
+  box-shadow: 2px 2px #65a2a5;
+}
+.elem:nth-child(5){
+  box-shadow: 2px 2px #6665a5;
+}
+
+.elem:hover{
+  box-shadow: 0 0 1px 1px #65a2a5;
+}
+.elem:hover img{
+  left: 30%;
+}
+.elem:hover p{
+  left: 15%;
+}
+
+.elem img{
+  position: absolute;
+  height: 100%;
+  left: 110%;
+  transition: left 700ms ease;
+  filter: grayscale(50%) brightness(60%);
+  box-shadow: -1px 0px 70px #0f2323;
+}
+
+
+.elem p{
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  font-size: 2em;
+  font-family: "ISOCTEUR", serif;
+  color: #6e8a8a;
+  opacity: 0.5;
+  transition: left 1500ms ease;
+}
+
+.elem a{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.logo{
+  font-family: "ISOCP", serif;
+  font-size: 4em;
+  width: 400px;
+}
+
+.vocal{
+  width: 0px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 5px;
+  display: inline-flex;
+  transition: width 500ms ease-in-out;
+}
+.animVocal{
+  width: 36px;
+}
+
+.portafolio{
+  display: block;
+  position: relative;
+  top: -30px;
+  left: 6px;
+  font-family: "ISOCPEUR",serif;
+  font-size: 0.5em;
+}
+
+.cerrar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+  font-family: arial;
+  cursor: crosshair;
+  transition: color 500ms ease;
+}
+.cerrar:hover{
+  color: white;
+}
+
+.emer{
+  height: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  transition: height 600ms ease-in-out;
+  overflow: hidden;
+}
+
+.conten{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+
+}
+.descri{
+  display: inline-block;
+  width: 40%;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.riel img{
+    width: 450px;
+    margin: 20px 0;
+
+}
+.riel{
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  overflow: auto;
+  display: inline-block;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.emer p, .emer a{
+  color: white;
+  opacity: 0.7;
+  font-family: "ISOCP";
+}
+
+.conten video:nth-child(2){
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.speed, .canino, .boreal, .particula, .ciudad{
+  display: none;
+}
